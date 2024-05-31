@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <title>BrainSpark</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div>
+        <div class="header-container">
             <a href="#">
                 <img class="header-logo" src="img/logo.svg" width="105" height="100" alt="логотип BrainSpark">
             </a>
@@ -36,23 +39,27 @@
                     </li>
                 </ul>
             </nav>
-        </div>
-        <a href="#">
-            <img src="img/user.svg" width="10.39px" height="10.39px" alt="иконка профиля">
-        </a>
+            <div class="header-profile">
+                <a  href="#">
+                    <img src="img/user.svg" width="20px" height="20px" alt="иконка профиля">
+                </a>
+            </div>
+        </div>    
     </header>
     
     <main class="main">
         <section class="lead">
             <img src="img/main-photo.jpg" width="1270" alt="фото офиса BrainSpark">
-            <h1 class="lead-title">BrainSpark</h1>
-            <p>Акселератор Студенческих Стартапов</p>
+            <div class="lead-container">
+                <h1>BrainSpark</h1>
+                <p>Акселератор Студенческих Стартапов</p>
+            </div>
         </section>
 
         <section class="reviews">
-            <div class="review-1">
-                <div class="review-container">
-                    <h3 class="review-title">Сессия мозгового штурма</h3>
+            <div class="review-1 review">
+                <div class="review-column">
+                    <h3>Сессия мозгового штурма</h3>
                     <p>
                         В cамом сердце кипящего инновациями пространства, где мечты превращаются в реальность,
                         – в Центре Инноваций — царит атмосфера креатива и коллаборации.
@@ -62,60 +69,62 @@
                         разноцветные стикеры, маркёры и ноутбуки. В воздухе витает аромат свежезаваренного кофе,
                         а по комнате разносятся оживлённые голоса.
                     </p>
-                    <p>
+                    <p class="review-last-p">
                         Здесь, под чутким руководством опытных менторов, амбициозные стартаперы генерируют идеи,
                         которые завтра могут изменить мир.
                     </p>
                 </div>
-                <img src="img/review-1.jpg" width="610" alt="первое мероприятие">
+                <img src="img/review-1.jpg" width="610" height="260" alt="первое мероприятие">
             </div>
 
-            <div class="review-2">
-                <div class="review-container">
-                    <h3 class="review-title">Презентация проекта на встрече в Инкубаторе Стартапов</h3>
+            <div class="review-2 review">
+                <div class="review-column">
+                    <h3>Презентация проекта на встрече в Инкубаторе Стартапов</h3>
                     <p>
                         Приготовьтесь к погружению в мир амбиций, энтузиазма и инноваций! Вас ждёт захватывающее
                         путешествие в мир стартапов, где идеи превращаются в реальность.
                     </p>
-                    <button class="review-button">
-                        дальше
-                    </button>
+                    <div class="review-button-container">
+                        <button>дальше</button>
+                    </div>
                 </div>
-                <img src="img/review-2.jpg" width="610" alt="второе мероприятие">
+                <img src="img/review-2.jpg" width="610" height="260" alt="второе мероприятие">
             </div>
 
-            <div class="review-3">
-                <div class="review-container">
-                    <h3 class="review-title">Мероприятие для нетворкинга</h3>
+            <div class="review-3 review">
+                <div class="review-column">
+                    <h3>Мероприятие для нетворкинга</h3>
                     <p>
                         Приглашаем вас на динамичное и продуктивное мероприятие, созданное для нетворкинга!
                         Здесь вы сможете расширить круг своих профессиональных контактов, завести полезные
                         знакомства и найти новые возможности для развития.
                     </p>
-                    <button class="review-button">
-                        дальше
-                    </button>
+                    <div class="review-button-container">
+                        <button class="review-button">дальше</button>
+                    </div>
                 </div>
-                <img src="img/review-3.jpg" width="610" alt="третье мероприятие">
+                <img src="img/review-3.jpg" width="610" height="260" alt="третье мероприятие">
             </div>
         </section>
 
         <section class="events">
-            <h2 class="events-title">События</h2>
-            <h3>От идеи до инновации: путь молодых предпринимателей в стартап-инкубаторе</h3>
+            <h2>События</h2>
+            <h4 class="events-title events-subtitle">От идеи до инновации: путь молодых предпринимателей в стартап-инкубаторе</h4>
             <div class="events-author">
-                <img class="author-photo"src="img/author.png" width="80" alt="фото автора">
-                <div class="author-description">
-                    <p class="author-name">Екатерина Смирнова</p>
-                    <p class="author-status">
+                <div class="author-photo">
+                    <img  src="img/author.png" width="80" alt="фото автора">
+                </div>
+                <div class="events-title author-description">
+                    <h4 class="events-title">Екатерина Смирнова</h4>
+                    <p>
                         координатор стартап-инкубатора и эксперт в области инновационного предпринимательства
                     </p>
                 </div>
             </div>
 
-            <p class="events-p">
-                “В мире, где инновации движут прогрессом, студенческие стартапы играют ключевую роль. 
-                Наш стартап-инкубатор для студентов стал колыбелью для новаторских идей и 
+            <p class="events-quote events-p">
+                “В мире, где инновации движут прогрессом, студенческие стартапы играют ключевую<br> роль. 
+                Наш стартап-инкубатор для студентов стал колыбелью для новаторских идей<br> и 
                 предпринимательских проектов.”
             </p>
 
@@ -133,15 +142,17 @@
                 и каждый студент может стать его частью. 
             </p>
 
-            <blockquote class="events-quote">
-                «Не бойтесь пробовать новое! В студенческом стартап-инкубаторе вам помогут сделать первые шаги 
-                в мир предпринимательства»
+            <blockquote>
+                <h3>
+                    «Не бойтесь пробовать новое! В студенческом стартап-инкубаторе вам помогут сделать первые шаги
+                    в мир предпринимательства»
+                </h3>
             </blockquote>
 
             <div class="events-assets">
-                <h3 class="assets-title">
+                <h4 class="events-title">
                     Стартап-инкубатор предлагает не только ресурсы, но и среду для роста и развития молодых компаний:
-                </h3>
+                </h4>
                 <ul class="assets-list">
                     <li>
                         Мастер-классы и семинары: обучение ведётся успешными предпринимателями и экспертами.  
@@ -156,15 +167,15 @@
             </div>
 
             <div class="events-story">
-                <h4>Истории успеха: примеры для подражания</h4>
+                <h4 class="events-title">Истории успеха: примеры для подражания</h4>
                 <p>
-                    Многие студенческие стартапы, начавшиеся в нашем инкубаторе, достигли значительных успехов. 
+                    Многие студенческие стартапы, начавшиеся в нашем инкубаторе, достигли значительных<br> успехов. 
                     Их пути вдохновляют и мотивируют новое поколение предпринимателей.
                 </p>
             </div>
 
             <div class="events-success">
-                <h3 class="success-title">Основы успеха: как мы работаем</h3>
+                <h4 class="events-title">Основы успеха: как мы работаем</h4>
                 <p>
                     От идеи до рыночного запуска, наш инкубатор поддерживает стартапы на каждом шагу. Мы помогаем 
                     преодолевать препятствия и находить оптимальные решения для роста бизнеса.
@@ -343,15 +354,15 @@
                 <h2 class="contacts-title">Свяжитесь с нами</h2>
                 <ul class="contacts-list">
                     <li>
-                        <h3>Адрес: </h3>
+                        <h4>Адрес: </h4>
                         <p>Москва, Красноармейская 10</p>
                     </li>
                     <li>
-                        <h3>Телефон </h3>
+                        <h4>Телефон </h4>
                         <a href="tel:+70100300000">+7 010 030-00-00</a>
                     </li>
                     <li>
-                        <h3>Мы в социальных сетях: </h3>
+                        <h4>Мы в социальных сетях: </h4>
                         <ul class="contacts-list-socials">
                             <li class="vk">
                                 <a href="#">
@@ -380,13 +391,15 @@
     <footer class="footer-nav">
         <div class="footer-logo">
             <a href="#">
-                <img src="img/logo.svg" width="150" alt="логотип BrainSpark">
+                <img src="img/logo-footer.svg" width="150" alt="логотип BrainSpark">
             </a>
         </div>
         <div class="footer-container">
             <ul class="footer-nav-list">
                 <li class="footer-nav-list-item">
-                    <h2 class="footer-nav-title">Наша компания</h2>
+                    <p class="footer-nav-title">
+                        <strong>Наша компания</strong>
+                    </p>
                     <ul>
                         <li>
                             <a href="#">О нас</a>
@@ -397,7 +410,9 @@
                     </ul>
                 </li>
                 <li class="footer-nav-list-item">
-                    <h2 class="footer-nav-title">Документы</h2>
+                    <p class="footer-nav-title">
+                        <strong>Документы</strong>
+                    </p>
                     <ul>
                         <li>
                             <a href="#">Правовые документы</a>
@@ -408,7 +423,9 @@
                     </ul>
                 </li>
                 <li class="footer-nav-list-item">
-                    <h2 class="footer-nav-title">Сотрудничество</h2>
+                    <p class="footer-nav-title">
+                        <strong>Сотрудничество</strong>
+                    </p>
                     <ul>
                         <li>
                             <a href="#">Вакансии</a>
