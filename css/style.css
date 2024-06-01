@@ -15,8 +15,11 @@ a {
     text-decoration: none;
 }
 
+/* HEADER  */
+
 .header {
     width: 1366px;
+    height: 160px;
     box-sizing: border-box;
     padding: 0 48px;
     padding-top: 20px;
@@ -46,18 +49,26 @@ a {
     gap: 30px;
 }
 
-.header-profile {
+.header-button-container {
+    margin-left: auto;  
+}
+
+.header-button {
     width: 44px;
     height: 44px;
-    margin-left: auto;
     border: 1px solid;
     border-color: rgba(22, 49, 82, 0.3);
     border-radius: 15%;
+    background-color: rgba(255, 255, 255, 1);
 }
 
+/* MAIN */
+
 .main {
-    
+
 }
+
+/* LEAD  */
 
 .lead {
     width: 1366px;
@@ -96,11 +107,14 @@ h1 {
     line-height: 60px;
 }
 
+/* РЕВЬЮ */
+
 .reviews {
+    width: 1366px;
+    height: 1206px;
     padding: 100px 48px;
     box-sizing: border-box;
     background-color: rgba(240, 238, 255, 1);
-    margin-bottom: 20px;
 }
 
 .review {
@@ -133,11 +147,16 @@ h1 {
     margin-bottom: 12px;
 }
 
-.review-last-p {
-    margin-bottom: 0;
+.review-1 {
+    height: 366px;
+}
+
+.review-2 {
+    height: 260px;
 }
 
 .review-3 {
+    height: 260px;
     margin-bottom: 0;
 }
 
@@ -157,6 +176,10 @@ h1 {
     background-color: rgba(255, 255, 255, 1);
 }
 
+.review button a {
+    color: rgba(240, 135, 60, 1);
+}
+
 .review img {
     display: block;
 }
@@ -164,12 +187,12 @@ h1 {
 /* СОБЫТИЯ */
 
 .events {
-    width: 932px;
+    width: 836px;
     margin: 0;
     padding: 0;
     margin: 0 auto;
     padding: 50px 48px;
-    box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -183,6 +206,7 @@ h2 {
     text-align: center;
     margin-bottom: 60px;
 }
+
 
 .events-title {
     margin: 0;
@@ -200,18 +224,26 @@ h2 {
 
 .events-author {
     width: 600px;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 13px;
+    column-gap: 13px;
     margin-bottom: 60px;
 }
 
-.author-photo {
-    
+.events-author img {
+    display: block;
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: right;
 }
 
 .author-description h4 {
     color: rgba(240, 135, 60, 1);
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .author-description p {
@@ -232,9 +264,17 @@ h2 {
 }
 
 .events-quote {
-    width: 836px;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 60px;
+}
+
+.events-quote p {
+    margin: 0;
+    padding: 0;
 }
 
 .events-illustration {
@@ -255,10 +295,8 @@ h2 {
     text-align: center;
 }
 
-.events blockquote {
-    width: 836px;
+.events-main-quote {
     margin: 0;
-    padding: 0;
     padding-left: 48px;
     font-weight: 600;
     font-size: 28px;
@@ -266,11 +304,9 @@ h2 {
     color: rgba(104, 24, 208, 1);
     border-left: 8px solid rgba(240, 135, 60, 1);
     margin-bottom: 60px;
-    box-sizing: border-box;
 }
 
-.events blockquote h3{
-    width: 836px;
+.events-main-quote p {
     margin: 0;
     padding: 0;
 }
@@ -288,7 +324,6 @@ h2 {
 
 .events-story {
     width: 836px;
-    height: 150px;
     padding: 20px;
     background-color: rgba(104, 24, 208, 1);
     text-align: center;
@@ -308,15 +343,28 @@ h2 {
 /* ГАЛЕРЕЯ */
 
 .gallery {
+    width: 1366;
     margin: 0 auto;
+    padding: 0 48px;
+    padding-top: 20px;
+    padding-bottom: 50px; 
+}
+
+.gallery-title {
+
 }
 
 .gallery-container {
+    width: 970px;
+    margin: 0 auto;
+}
 
+.gallery-container img {
+    display: block;
 }
 
 .gallery-main-item {
-
+    margin-bottom: 30px;
 }
 
 .gallery-list {
@@ -325,5 +373,18 @@ h2 {
     list-style: none;
     width: 970px;
     display: flex;
+    justify-content: space-between;
 }
 
+.gallery-list-item {
+
+}
+
+/* НАШИ РЕЗИДЕНТЫ */
+
+.residents {
+    width: 1366px;
+    padding: 100px 48px;
+    box-sizing: border-box;
+    background-color: rgba(240, 238, 255, 1);
+}
