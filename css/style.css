@@ -49,8 +49,17 @@ a {
     gap: 30px;
 }
 
-.header-nav ul li {
-    
+.header-nav ul a:hover {
+    color: rgba(66, 78, 92, 1);
+}
+
+.header-nav ul a:focus {
+    color: rgba(104, 24, 208, 1);
+}
+
+.header-nav ul a:active {
+    text-decoration: underline;
+    color: rgba(240, 135, 60, 1);
 }
 
 .header-button-container {
@@ -59,12 +68,40 @@ a {
 }
 
 .header-button {
+    margin: 0;
+    padding: 0;
     width: 44px;
     height: 44px;
-    border: 1px solid;
-    border-color: rgba(22, 49, 82, 0.3);
+    border: none;
+    background-color: rgba(240, 238, 255, 1);
+}
+
+.header-img-container {
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(22, 49, 82, 0.3);
     border-radius: 15%;
     background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-button a:hover img {
+    content: url(/img/header/user-hover.svg);
+}
+
+.header-button a:focus .header-img-container {
+    border-color: rgba(22, 49, 82, 1);
+}
+
+.header-button a:active .header-img-container {
+    background-color: rgba(104, 24, 208, 1);
+    border-color: rgba(8, 9, 28, 0.05);
+}
+
+.header-button a:active img {
+    content: url(/img/header/user-active.svg);
 }
 
 /* MAIN */
@@ -169,20 +206,31 @@ h1 {
     text-align: end; 
 }
 
-.review button {
+.review-button {
     margin: 0;
     padding: 0;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
-    text-decoration: underline;
-    color: rgba(240, 135, 60, 1);
     border: none;
     background-color: rgba(255, 255, 255, 1);
 }
 
-.review button a {
+.review-button a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
     color: rgba(240, 135, 60, 1);
+    text-decoration: underline;
+}
+
+.review-button a:hover {
+    color: rgba(240, 238, 255, 1);
+}
+
+.review-button a:focus {
+    color: rgba(22, 49, 82, 1);
+}
+
+.review-button a:active {
+    color: rgba(104, 24, 208, 1);
 }
 
 .review img {
@@ -477,6 +525,20 @@ h2 {
     text-decoration: underline;
 }
 
+.card-link a:hover {
+    color: rgba(151, 71, 255, 1);
+    text-decoration: none;
+}
+
+.card-link a:focus {
+    color: rgba(22, 49, 82, 1);
+}
+
+.card-link a:active {
+    color: rgba(104, 24, 208, 1);
+    text-decoration: underline;
+}
+
 .card-description {
     width: 435px;
     margin: 0;
@@ -562,6 +624,22 @@ h2 {
     margin-bottom: 120px;
 }
 
+.contacts-list-phone a {
+    color: rgba(22, 49, 82, 1);
+}
+
+.contacts-list-phone a:hover {
+    color: rgba(151, 71, 255, 1);
+}
+
+.contacts-list-phone a:focus {
+    color: rgba(104, 24, 208, 1);
+}
+
+.contacts-list-phone a:active {
+    color: rgba(240, 135, 60, 1);
+}
+
 .contacts-list li:nth-child(3) {
     display: inline;
 }
@@ -578,17 +656,41 @@ h2 {
 }
 
 .contacts-socials li {
+    
+}
+
+.contacts-socials a {
+    margin: 0;
+    padding: 0;
     width: 32px;
     height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 4px;
+    border: none;
 }
 
-.whatsapp {
-    padding: 4.48px;
-    box-sizing: border-box;
+
+.contacts-socials a:hover {
+    background-color: rgba(240, 238, 255, 1);
+}
+
+.contacts-socials a:focus {
+    background-color: rgba(104, 24, 208, 1);
+}
+
+.contacts-socials a:focus img {
+    filter: brightness(0) invert(1);
+}
+
+.contacts-socials a:active {
+    background-color: rgba(22, 49, 82, 1);
+}
+
+.contacts-socials a:active img {
+    filter: brightness(0) invert(1);
 }
 
 /* FOOTER */
@@ -631,6 +733,7 @@ h2 {
 }
 
 .footer-nav-item {
+    width: 165.33px;
     margin: 0;
 }
 
@@ -651,6 +754,7 @@ h2 {
 
 .footer-nav-item li {
     margin-bottom: 12px;
+    line-height: 18px;
 }
 
 .footer-nav-item li:nth-last-child(1) {
@@ -666,9 +770,24 @@ h2 {
     color: rgba(240, 238, 255, 1);
 }
 
+.footer-nav-item ul a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.footer-nav-item ul a:focus {
+    color: rgba(240, 135, 60, 1);
+}
+
+.footer-nav-item ul a:active {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 1);
+}
+
 .footer-rights {
+    width: 760px;
     margin: 0;
     padding: 0;
+    padding-top: 10px;
     font-size: 14px;
     line-height: 16.8px;
     color: rgba(240, 238, 255, 0.8);
